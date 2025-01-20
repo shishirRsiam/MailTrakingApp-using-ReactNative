@@ -1,7 +1,9 @@
 {
   "expo": {
     "name": "MailTrakingApp",
+    "displayName": "Mail Traking",
     "slug": "MailTrakingApp",
+    "description": "A simple mail tracking app that helps you track your mail's journey.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.shishirrsiam.MailTrakingApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a59849d1-7fc5-4a13-bead-e7b2c34e22be"
+      }
     }
   }
 }

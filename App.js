@@ -2,7 +2,7 @@ import API from './API';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import InputBox from './Component/InputBox';
-import { View, Keyboard } from 'react-native';
+import { View, Keyboard, StatusBar} from 'react-native';
 import DataLoader from './Component/DataLoader';
 import React, { useState, useEffect } from 'react';
 
@@ -32,6 +32,7 @@ const App = () => {
 
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar barStyle="dark-content" translucent={false} />
       <Navbar />
 
       <InputBox fetchData={fetchData} itemId={itemId} setItemId={setItemId} />
